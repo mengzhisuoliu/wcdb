@@ -66,7 +66,7 @@ HandleORMOperation::getFirstMultiObject(const ValueArray<StringView> tables,
     return select.firstMultiObject();
 }
 
-Optional<ValueArray<MultiObject>>
+OptionalValueArray<MultiObject>
 HandleORMOperation::getAllMultiObjects(const ValueArray<StringView> tables,
                                        const ResultFields &resultFields,
                                        const Expression &where,

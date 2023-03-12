@@ -96,7 +96,7 @@ public:
      @brief Get all selected objects.
      @return Array with all selected objects.
      */
-    Optional<ValueArray<MultiObject>> allMultiObjects();
+    OptionalValueArray<MultiObject> allMultiObjects();
 
 protected:
     MultiSelect(Recyclable<InnerDatabase *> databaseHolder);

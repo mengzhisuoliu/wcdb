@@ -222,7 +222,7 @@ public:
      @brief Get objects by specific selecting.
      */
     template<class ObjectType>
-    Optional<ValueArray<ObjectType>>
+    OptionalValueArray<ObjectType>
     getAllObjects(const UnsafeStringView &table,
                   const Expression &where = Expression(),
                   const OrderingTerms &orders = OrderingTerms(),
@@ -238,7 +238,7 @@ public:
      @brief Get objects on specific fields by specific selecting.
      */
     template<class ObjectType>
-    Optional<ValueArray<ObjectType>>
+    OptionalValueArray<ObjectType>
     getAllObjectsWithFields(const UnsafeStringView &table,
                             const ResultFields &resultFields,
                             const Expression &where = Expression(),
@@ -266,7 +266,7 @@ public:
     /**
      @brief Get objects by specific multi-selecting.
      */
-    Optional<ValueArray<MultiObject>>
+    OptionalValueArray<MultiObject>
     getAllMultiObjects(const ValueArray<StringView> tables,
                        const ResultFields &resultFields,
                        const Expression &where = Expression(),

@@ -101,9 +101,9 @@ Optional<MultiObject> MultiSelect::firstMultiObject()
     return object;
 }
 
-Optional<ValueArray<MultiObject>> MultiSelect::allMultiObjects()
+OptionalValueArray<MultiObject> MultiSelect::allMultiObjects()
 {
-    Optional<ValueArray<MultiObject>> objects;
+    OptionalValueArray<MultiObject> objects;
     WCTRemedialAssert(
     m_fields.size() != 0, "Result columns can't be empty.", return objects;);
     if (prepareStatement()) {
